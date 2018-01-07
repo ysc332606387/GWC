@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#F0F2F5"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#F7FBF7">
+
+        <CheckBox
+            android:id="@+id/rb_commodity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="9"
+            android:orientation="horizontal">
+            <!--   <ImageView
+                android:gravity="center"
+                android:id="@+id/iv_commodityImg"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />-->
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_commodityImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:layout_marginBottom="20dp"
+android:layout_marginTop="50dp"
+
+                fresco:failureImage="@drawable/c"
+                fresco:failureImageScaleType="centerInside"
+
+
+                fresco:placeholderImage="@drawable/aa"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:progressBarAutoRotateInterval="5000"
+
+
+                fresco:progressBarImage="@drawable/b"
+                fresco:progressBarImageScaleType="centerInside"
+
+                fresco:retryImage="@drawable/d"
+                fresco:retryImageScaleType="centerCrop"
+
+                ></com.facebook.drawee.view.SimpleDraweeView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_commodityName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_commodityPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:text="ooooooo"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_num"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <Button
+                            android:id="@+id/btn_delete"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <EditText
+                            android:id="@+id/et_num"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center" />
+
+                        <Button
+                            android:id="@+id/btn_add"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
